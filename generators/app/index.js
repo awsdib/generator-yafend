@@ -1,3 +1,5 @@
+var generators = require('yeoman-generator');
+
 module.exports = generators.Base.extend({
 
   // The name `constructor` is important here
@@ -7,7 +9,7 @@ module.exports = generators.Base.extend({
 
     // Next, add your custom code
     this.option('coffee'); // This method adds support for a `--coffee` flag
-  }
+  },
 
   method1: function () {
     console.log('method 1 just ran');
