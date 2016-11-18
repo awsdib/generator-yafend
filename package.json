@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "awsdib",
-  "license": "ISC",
+  "repository": "awsdib/generator-yafend",
   "files": [
     "generators/app",
     "generators/router"
