@@ -1,4 +1,7 @@
+'use strict';
 var generators = require('yeoman-generator');
+
+
 
 module.exports = generators.Base.extend({
 
@@ -11,10 +14,17 @@ module.exports = generators.Base.extend({
     this.option('coffee'); // This method adds support for a `--coffee` flag
   },
 
-  method1: function () {
-    console.log('method 1 just ran');
+  _method1: function () {
+
+    this.gruntfile.insertConfig("compass", "{ watch: { watch: true } }");
+    this.gruntfile.registerTask('build', 'compass');
+    // output: grunt.registerTask('build', ['compass']);
+
+    this.gruntfile.registerTask('build', ['compass', 'uglify']);
+    // output: grunt.registerTask('build', ['compass', 'uglify']);    
+    
   },
   method2: function () {
-    console.log('method 2 just ran');
+    //console.log(this.destinationRoot());
   }
 });

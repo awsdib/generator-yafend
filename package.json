@@ -2,7 +2,7 @@
   "name": "generator-yafend",
   "version": "0.1.0",
   "description": "Yet Another Frontend generator.",
-  "main": "index.js",
+  "main": "generators/app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
