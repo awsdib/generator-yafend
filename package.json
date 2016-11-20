@@ -16,6 +16,14 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.24.1"
+    "yeoman-generator": "^0.24.1",
+    "grunt-contrib-coffee": "^1.0.0",
+    "chalk": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "underscore.string": "^3.1.1",
+    "wiredep": "^4.0.0",
+    "inquirer-npm-name": "^2.0.0",
+    "lodash": "^4.3.0",
+    "yosay": "^1.2.0"
   }
 }
